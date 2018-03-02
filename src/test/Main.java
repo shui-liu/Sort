@@ -4,20 +4,19 @@ public class Main {
 	public static void main(String[] args) {
 		int n = 100;
 		int[] a = new int[n];
-		System.out.println("Ô­Ê¼ĞòÁĞ£º");
+		System.out.println("åŸå§‹åºåˆ—ï¼š");
 		for (int i = 0; i < n; i++) {
 			a[i] = (int) (Math.random() * 100);
 			System.out.print(a[i] + "\t");
 		}
-		// InsertSort test = new InsertSort();
-		// SelectionSort test = new SelectionSort();
-		// BubbleSort test = new BubbleSort();
-		// QuickSort test = new QuickSort();
-		// ShellSort test = new ShellSort();
-		// HeapSort test = new HeapSort();
-		MergeSort test = new MergeSort();
-		test.sort(a);
-		System.out.println("\n" + "ÒÑÅÅĞòÁĞ£º");
+		InsertSort.sort(a);
+		//SelectionSort.sort(a);
+		//BubbleSort.sort(a);
+		//QuickSort.sort(a);
+		//ShellSort.sort(a);
+		//HeapSort.sort(a);
+		//MergeSort.sort(a);
+		System.out.println("\n" + "å·²æ’åºåˆ—ï¼š");
 		for (int i = 0; i < n; i++) {
 			System.out.print(a[i] + "\t");
 		}

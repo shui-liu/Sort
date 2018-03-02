@@ -1,2 +1,9 @@
 eclipse.preferences.version=1
-encoding/<project>=UTF-8
+encoding//src/test/BubbleSort.java=UTF-8
+encoding//src/test/HeapSort.java=UTF-8
+encoding//src/test/InsertSort.java=UTF-8
+encoding//src/test/Main.java=UTF-8
+encoding//src/test/MergeSort.java=UTF-8
+encoding//src/test/QuickSort.java=UTF-8
+encoding//src/test/SelectionSort.java=UTF-8
+encoding//src/test/ShellSort.java=UTF-8

@@ -1,12 +1,12 @@
 package test;
 
 /**
- * ��������
- * ԭ������ԭ���������������У������ɵ�һ��Ԫ����ɵ��������к�������Ԫ����ɵ��������У����ν�����Ԫ��������Ԫ�رȽϲ�����
- * ʱ�临�Ӷȣ�O(n^2); �ռ临�Ӷȣ�O(1); �ȶ���true
+ * 插入排序
+ * 原理：将原序列视作两个序列：单独由第一个元素组成的有序序列和由其余元素组成的无序序列，依次将无序元素与有序元素比较并插入
+ * 时间复杂度：O(n^2); 空间复杂度：O(1); 稳定：true
 */
 public class InsertSort {
-	public void sort(int[] a) {
+	public static void sort(int[] a) {
 		for (int i = 1; i < a.length; i++) {
 			if (a[i] < a[i - 1]) {
 				int j = i - 1;

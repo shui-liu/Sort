@@ -1,12 +1,12 @@
 package test;
 
 /**
- * ¹é²¢ÅÅĞò
- * Ô­Àí£ºÔ­ĞòÁĞ·Ö³ÉÈô¸É×ÓĞòÁĞ£¬ÏÈÊ¹×ÓĞòÁĞÓĞĞò£¬ÔÙºÏ²¢ÓĞĞòµÄ×ÓĞòÁĞ
- * Ê±¼ä¸´ÔÓ¶È£ºO(nlgn); ¿Õ¼ä¸´ÔÓ¶È£ºO(n); ÎÈ¶¨£ºtrue
+ * å½’å¹¶æ’åº
+ * åŸç†ï¼šåŸåºåˆ—åˆ†æˆè‹¥å¹²å­åºåˆ—ï¼Œå…ˆä½¿å­åºåˆ—æœ‰åºï¼Œå†åˆå¹¶æœ‰åºçš„å­åºåˆ—
+ * æ—¶é—´å¤æ‚åº¦ï¼šO(nlgn); ç©ºé—´å¤æ‚åº¦ï¼šO(n); ç¨³å®šï¼štrue
 */
 public class MergeSort {
-	public void merge(int[] a, int low, int mid, int high) {
+	public static void merge(int[] a, int low, int mid, int high) {
 		int[] temp = new int[high - low + 1];
 		int i = low;
 		int j = mid + 1;
@@ -29,7 +29,7 @@ public class MergeSort {
 		}
 	}
 
-	public void mergeSort(int[] a, int low, int high) {
+	public static void mergeSort(int[] a, int low, int high) {
 		int mid = (low + high) / 2;
 		if (low < high) {
 			mergeSort(a, low, mid);
@@ -38,7 +38,7 @@ public class MergeSort {
 		}
 	}
 
-	public void sort(int[] a) {
+	public static void sort(int[] a) {
 		mergeSort(a, 0, a.length - 1);
 	}
 

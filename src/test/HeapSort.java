@@ -1,12 +1,12 @@
 package test;
 
 /**
- * ¶ÑÅÅĞò
- * Ô­Àí£ºÊ×ÏÈ½«ĞòÁĞ½¨Á¢Îª´ó¶¥¶Ñ£¬ÔÙÖØ¸´½»»»¶Ñ¶¥ºÍÄ©Î²ÔªËØ£¬»Ö¸´´ó¶¥ÌØĞÔÕâÁ½¸ö²½ÖèÖ±ÖÁËùÓĞÔªËØÓĞĞò Ê±¼ä¸´ÔÓ¶È£ºO(nlgn);
- * ¿Õ¼ä¸´ÔÓ¶È£ºO(1); ÎÈ¶¨£ºfalse
+ * å †æ’åº
+ * åŸç†ï¼šé¦–å…ˆå°†åºåˆ—å»ºç«‹ä¸ºå¤§é¡¶å †ï¼Œå†é‡å¤äº¤æ¢å †é¡¶å’Œæœ«å°¾å…ƒç´ ï¼Œæ¢å¤å¤§é¡¶ç‰¹æ€§è¿™ä¸¤ä¸ªæ­¥éª¤ç›´è‡³æ‰€æœ‰å…ƒç´ æœ‰åº æ—¶é—´å¤æ‚åº¦ï¼šO(nlgn);
+ * ç©ºé—´å¤æ‚åº¦ï¼šO(1); ç¨³å®šï¼šfalse
  */
 public class HeapSort {
-	public void adjust(int[] a, int i, int len) {
+	public static void adjust(int[] a, int i, int len) {
 		int temp, j;
 		temp = a[i];
 		for (j = 2 * i + 1; j < len; j = j * 2 + 1) {
@@ -20,12 +20,12 @@ public class HeapSort {
 		a[i] = temp;
 	}
 
-	public void sort(int[] a) {
-		// ½¨Á¢´ó¶¥¶Ñ
+	public static void sort(int[] a) {
+		// å»ºç«‹å¤§é¡¶å †
 		for (int i = a.length / 2 - 1; i > -1; i--) {
 			adjust(a, i, a.length);
 		}
-		// ½»»»¶Ñ¶¥ºÍÄ©Î²ÔªËØ£¬²¢»Ö¸´´ó¶¥¶Ñ
+		// äº¤æ¢å †é¡¶å’Œæœ«å°¾å…ƒç´ ï¼Œå¹¶æ¢å¤å¤§é¡¶å †
 		for (int i = a.length - 1; i > 0; i--) {
 			int temp = a[i];
 			a[i] = a[0];
